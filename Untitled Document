@@ -1,0 +1,9 @@
+rostopic pub -1 /ardrone/takeoff std_msgs/Empty
+rostopic pub -1 /ardrone/land std_msgs/Empty
+rostopic pub -1 /ardrone/cmd_vel geometry_msgs/Twist -- '[2.0, 0.0, 0.0]' '[0.0, 0.0, 0.0]'
+rostopic pub -1 /ardrone/cmd_vel geometry_msgs/Twist -- '[0.0, 0.0, 0.0]' '[0.0, 0.0, 0.0]'
+source devel/setup.bash
+
+roslaunch vrpn_client_ros sample.launch server:=192.168.1.103
+rosrun image_view image_view image:=/network_view
+lrosrun flyer flyer_node
