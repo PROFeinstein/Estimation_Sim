@@ -1,0 +1,7 @@
+<launch>
+  
+   <node pkg="pelican_ctrl_pkg" type="pelican_ctrl_node" name= "pelican_ctrl_node" output= "screen" />
+
+   <node pkg="keyboard" type="keyboard" name= "keyboard" output= "screen" />
+  
+</launch>

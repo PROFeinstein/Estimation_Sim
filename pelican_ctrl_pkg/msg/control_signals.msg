@@ -1,0 +1,9 @@
+Header header
+  string  name
+  float64 gain_1
+  float64 gain_2
+  float64 gain_3
+  float64 desired_pos
+  float64 current_pos
+  float64 error_pos
+  float64 control_signal
